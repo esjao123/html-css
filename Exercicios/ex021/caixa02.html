@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+        }
+
+        header{
+            background-color: white;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        nav{
+            background-color: black;
+            padding: 5px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);
+        }
+
+        nav > a{
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+
+        nav >a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: antiquewhite;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h1{
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
+        }
+
+        h2{
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.493);
+        }
+
+        section#assuntos > a{
+            background-color: aqua;
+            font-weight: bold;
+            padding: 3px;
+            margin-right: 45px;
+            border-radius: 3px;
+            text-decoration: none;
+            color: rgb(25, 0, 255);
+        }
+
+        article{
+            background-color: rgb(218, 140, 45);
+            padding: 5px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        aside{
+            background-color: rgb(185, 173, 173);
+            color: white;
+            font-weight: bold;
+            width: 195px;
+            padding: 1px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
+        }
+
+        aside > p{
+            margin: unset;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <a href="">Esportes</a>
+            <a href="">Politica</a>
+            <a href="">Tecnologia</a>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias no Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem voluptates, distinctio sit enim sapiente voluptatum laudantium molestiae at atque dolorem voluptatem nulla nobis consequuntur? Sequi beatae dolor architecto eaque repudiandae!</p>
+                <aside>
+                    <p>Escrito por Fulano de tal</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Site Desenvolvido por João</p>
+    </footer>
+</body>
+</html>
